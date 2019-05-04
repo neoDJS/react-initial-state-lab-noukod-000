@@ -4,8 +4,11 @@ import React from 'react';
 class ImageSlider  extends  React.Component{
   constructor(){
     super();
-    this.state{
+    this.state({
       currentSlideIndex: 0
-    }
+    });
   }
-  render(`I am on slide ${this.state.currentSlideIndex}`);
+  render(){
+    return (`I am on slide ${this.state.currentSlideIndex}`);
+  }
+}
